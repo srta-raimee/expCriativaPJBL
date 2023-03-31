@@ -22,7 +22,7 @@ GENERAL CLASSES
 .title{}
 .content{}
 .button a{ text-decoration:none; background:url(../images/btn-bg.png) no-repeat; width:90px; height:30px; text-align:center; line-height:30px; display:block;}
-.button a:hover{background:url(../images/btn-bghover.png) no-repeat; color:#04192f;}
+.button a:hover{background:url(../images/btn-bghover.png) no-repeat; color: pink;}
 .page-wrap{ width:960px; margin:0 auto; overflow:hidden;}
 .wrap{ width:960px; margin:0 auto; overflow:hidden;}
 .input-newsletter{ background:url(../images/newsletter-bg.png) no-repeat center; width:210px; height:46px; border:none; text-indent:10px; color:#fff;font-family:"Trebuchet MS"; font-size:14px;}
@@ -73,10 +73,10 @@ WRAP2 CLASSES
 .wrap2{ width:880px; height:75px; margin:0 auto; overflow:hidden; background:url(../images/box-bg.png) no-repeat; margin-top:60px; margin-bottom:60px; padding:40px 40px;}
 .wrap2 .content{ width:500px; float:left;}
 .icon{ float:left; width:35px; height:60px; margin-right:25px;}
-.wrap2 h1{ color:#001325;}
+.wrap2 h1{ color: pink;}
 .wrap2 .button{ float:right; display:block;}
 .wrap2 .button a{background:url(../images/box-bg2.png) no-repeat;  width:220px; height:60px; font-size:26px; line-height:60px; text-transform:uppercase; padding-left:40px;}
-.wrap2 .button a:hover{ width:220px; height:60px; padding-left:40px; background:url(../images/box-bg2hover.png) no-repeat; color:#ec3600;}
+.wrap2 .button a:hover{ width:220px; height:60px; padding-left:40px; background:url(../images/box-bg2hover.png) no-repeat; color: pink;}
 
 /*-------------------------------------------------
 WRAP3 CLASSES
@@ -103,7 +103,7 @@ COLS CLASSES
 .leftcol .panel .title{ background:url(../images/line-bg.jpg) repeat-x bottom; padding-bottom:25px; margin-bottom:25px;}
 .leftcol .panel .title h1{ text-transform:uppercase;}
 .leftcol .panel .content h2{ color:#1e3246; padding-bottom:15px; padding-top:10px;}
-.leftcol .panel .title span{ font-size:18px; color:#1e3246;}
+.leftcol .panel .title span{ font-size:18px; color: pink;}
 .leftcol .panel .content p{ padding-bottom:20px; font-size: 18;}
 .leftcol .panel .content img{ float:left; margin-right:20px; background:#dd2900; padding:3px; border:#f32d00 solid 2px;}
 

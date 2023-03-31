@@ -2,9 +2,11 @@ import flask as fk
 
 render = fk.Blueprint("render", __name__, template_folder="./views/", static_folder='./static/', root_path="./")
 
+# aqui estão todas as funções de renderização de páginas (somente e apenas), para fins de organização
+
 @render.route("/")
 def default_index():
-    return fk.render_template("about.html")
+    return fk.render_template("home.html")
 
 @render.route("/home")
 def ret_home():

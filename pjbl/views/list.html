@@ -1,42 +1,8 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Listagem</title>
-<link href="/static/css/styles.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
-
-<div class="header-wrap">
-	<div class="logo">
-		<h1>Lumen Pass</h1>
-    </div>
-</div><!---header-wrap-End--->
-
-<div class="menu-wrap">
-	<div class="menu">
-		<ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="about">Sobre</a></li>
-            <li><a href="project">Projeto</a></li>
-            <li><a href="pag_cadastro">Cadastro</a></li>
-            <li><a href="pag_login">Login</a></li>
-            <li><a href="list" class="active">Listagem</a></li>
-        </ul>
-  </div>
+{% extends "base.html" %}
+{% block title %} Listagem {% endblock %}
+{% block content %}
     
-    <div class="socia-wrap">
-	<div class="socail">
-		<ul>
-        	<li><a href="#"><img src="/static/images/aim.png" alt="" /></a></li>
-        	<li><a href="#"><img src="/static/images/facebook.png" alt="" /></a></li>
-            <li><a href="#"><img src="/static/images/twwtter.png" alt="" /></a></li>
-            <li><a href="#"><img src="/static/images/linkedin.png" alt="" /></a></li>
-		</ul>
-	</div>
-</div>
-</div><!---menu-wrap-End--->
-
+  
 <div class="page-wrap">
 <div class="wrap3">  
   <div class=" leftcol">
@@ -72,13 +38,7 @@
 </div>    
 </div><!---page-wrap-End--->
 
-<div class="clearing"></div>
-<div class="copyright-wrap">
-	<div class="wrap">
-    	<div class="content">
-        <p>Copyright (c) Larisalves. Todos os direitos foram reservados.</p>
-        </div>
-	</div>
-</div><!---copyright-wrap-End--->
-</body>
-</html>
+
+{% endblock %}
+{% block class6 %} class = 'active' {% endblock %}
+
