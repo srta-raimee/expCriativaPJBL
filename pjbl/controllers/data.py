@@ -1,4 +1,5 @@
 import flask as fk
+from controllers.render import render
 
 data = fk.Blueprint("data", __name__, template_folder="./views/", static_folder='./static/', root_path="./")
 
