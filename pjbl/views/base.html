@@ -2,16 +2,22 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>{% block head %}
+<link rel="icon" href="..\static\images\icon.png">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>{% block title %}{% endblock %}</title>
 <link href="/static/css/styles.css" rel="stylesheet" type="text/css" />
+
 </head> {% endblock %}
 <body>
 
 <div class="header-wrap">
+  
 	<div class="logo">
-		<h1>Lumen Pass</h1>
+		
+    <img id="logo" src="..\static\images\logo.png"></img> 
+    <h3>Uma solução que brilha</h3>
     </div>
+    
 </div><!---header-wrap-End--->
 
 <div class="menu-wrap">
@@ -20,9 +26,11 @@
             <li><a href="/" {% block class1 %}  {% endblock %}>Home</a></li>
             <li><a href="about" {% block class2 %} class="" {% endblock %}>Sobre</a></li>
             <li><a href="project" {% block class3 %} class="" {% endblock %}>Projeto</a></li>
-            <li><a href="pag_cadastro" {% block class4 %} class="" {% endblock %}>Cadastro</a></li>
-            <li><a href="pag_login" {% block class5 %} class="" {% endblock %}>Login</a></li>
-            <li><a href="list" {% block class6 %} class="" {% endblock %}>Listagem</a></li>
+            <li><a href="pag_cadastro_sensor" {% block class4 %} class="" {% endblock %}>+Sensor</a></li>
+            <li><a href="sensores" {% block class5 %} class="" {% endblock %}>Faixa</a></li>
+            <li><a href="list" {% block class6 %} class="" {% endblock %}>Sensores</a></li>
+            <li><a href="pag_cadastro_user" {% block class7 %} class="" {% endblock %}>+User</a></li>
+            <li><a href="pag_login" {% block class8 %} class="" {% endblock %}>Login</a></li>
         </ul>
   </div>
 
@@ -41,7 +49,7 @@
 {% block content %} 
 {% endblock %}
 
-
+{% block footer %}
 <div class="clearing"></div>
 <div class="copyright-wrap">
 	<div class="wrap">
@@ -50,6 +58,6 @@
         </div>
 	</div>
 </div><!---copyright-wrap-End--->
-
+{% endblock %}
 </body>
 </html>

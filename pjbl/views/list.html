@@ -9,22 +9,18 @@
   <div class="panel">
   	<div class="title">
   		<h1>Listagem </h1>
-        <span>Listagem de usuários cadastrados.</span>
+        <span>Listagem de Sensores: </span>
     </div>
       <div class="panel">
-        <div class="content marTop30"> <img src="/static/images/img6.jpg" width="200" height="200" class="float-left mar-right30"/>
-          <h2>Camila</h2>
-          <p>Contato: camilagravida@gmail.com</p>
+        <div>
+          {% for i in range(sensores|length) %}
+    <li><b>{{ sensores[i] }}</b> </br>
+      Tempo Ligado: {{ tempos[i] }} </br>
+      Quantidade por faixa: {{ qtd[i] }} </br>
+      Tempo da Travessia do Pedestre: {{ tempoTrav[i] }}</li></br>
+{% endfor %}
         </div>
-        <div class="clearing"></div>
-        <div class="content marTop30"> <img src="/static/images/img7.jpg" width="200" height="200" class="float-left mar-right30"/>
-          <h2>Morbius</h2>
-          <p>Contato: Morbius@morbius.edu.br </p>
-        </div>
-        <div class="clearing"></div>
-        <div class="content marTop30"> <img src="/static/images/img8.jpg" width="200" height="200" class="float-left mar-right30"/>
-          <h2>Trinity</h2>
-          <p>Trinity123@matrix.com</p>
+    
         </div>
         <div class="clearing"></div>
       </div>

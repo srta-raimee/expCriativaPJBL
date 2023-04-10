@@ -9,6 +9,11 @@ h2{ font-family:"Trebuchet MS"; font-size:18px; font-weight:normal;}
 P{ line-height:20px;}
 a{text-decoration:none; color:#ffed71;}
 a:hover{color:#ffffff;}
+#logo{
+    width: 150px;
+    height: 120px;
+    
+}
 /*-------------------------------------------------
 GENERAL CLASSES
 -------------------------------------------------*/
@@ -38,12 +43,12 @@ HEADER CLASSES
 /*-------------------------------------------------
 MENU CLASSES
 -------------------------------------------------*/
-.menu-wrap{ overflow:hidden; margin:25px auto 30px auto; width:960px;}
-.menu{ float:left; width:660px;}
-.menu ul li{ list-style:none; float:left; width:88px; text-align:center; line-height:40px; margin-right:10px;}
+.menu-wrap{ overflow:hidden; margin:25px auto 30px auto; width:100%;}
+.menu{  width:100%;}
+.menu ul li{ list-style:none; float:left; width:100px; text-align:center; line-height:40px; margin-right:10px;}
 .menu ul li a{ text-decoration:none; font-size:15px; font-weight:bold; text-transform:uppercase; text-align:center; display:block; color:#ffed71;}
 .menu ul li a:hover{ color:#ffffff;  background:url(../images/menu-btn.png) no-repeat;}
-.menu ul li a.active{ background:url(../images/menu-btn.png) no-repeat; color:#ffed71; width:88px; height:40px; color:#ffffff;}
+.menu ul li a.active{ background:url(../images/menu-btn.png) no-repeat; color:#ffed71; width:100px; height:40px; color:#ffffff;}
 
 /*-------------------------------------------------
 SOCIAL MEDIA CLASSES
@@ -143,9 +148,12 @@ CONTACT FORM CLASSS
 /*-------------------------------------------------
 FOOTER CLASSES
 -------------------------------------------------*/
-.footer-wrap{ background:url(../images/bg2.jpg); margin-top:80px; overflow:hidden;}
-.footer-wrap .wrap{ width:960px; margin:0 auto;background:url(../images/footerbg-light.png) no-repeat center; height:208px; padding-top:60px; padding-bottom:60px; overflow:hidden;}
-.footer-wrap .wrap .panel{width:300px; float:left;}
+.copyright-wrap{
+    margin-top:20%; 
+}
+.footer-wrap{background:url(../images/bg2.jpg); overflow:hidden;}
+.footer-wrap .wrap{ width:100%; margin:0 auto;background:url(../images/footerbg-light.png) no-repeat center; height:208px; padding-top:60px; padding-bottom:60px; overflow:hidden;}
+.footer-wrap .wrap .panel{width:100%; float:left;}
 .footer-wrap .wrap .panel .title{ color:#ffffff; padding-bottom:30px;}
 .testimonials{background:url(../images/testimonials-bg.png) no-repeat; width:220px; height:106px; padding:30px 50px 30px 30px;}
 .footer-wrap .wrap .panel .content span{ color:#da2600;}
@@ -157,7 +165,7 @@ FOOTER CLASSES
 .footer-wrap .wrap .panel .content ul li{list-style:none; float:left;}
 .footer-wrap .wrap .panel .content ul li .button{ background:url(../images/signup-btn.png); width:80px; height:46px; border:none; font-size:18px; color:#3d1a1b;  font-family:"Trebuchet MS"; margin-left:10px;}
 
-.cotact{width:300px;}
+.cotact{width:100%;}
 .cotact ul li{ border-bottom:#0d304f solid 1px; list-style:none; line-height:50px;}
 .cotact ul li img{ padding-right:10px;}
 
