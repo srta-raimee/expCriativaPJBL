@@ -11,17 +11,27 @@
             <span>Login do usuário</span>
         </div>
           <div class="panel">
-            <div>
-              login
-            </div>
-        
+            <form action="/login" method="POST">
+              <div class="contact-form mar-top30">
+              
+                  <label> <span>Email</span>
+                  <input type="text" class="input_text" name="email" id="email"/>
+                  
+                  <label> <span>Senha</span>
+                    <input type="password" class="input_text" name="senha" id="senha"/>
+                  
+                
+                    
+                <button type="submit" class="button">Enviar</button>
+              </div>
+            </form>
             </div>
             <div class="clearing"></div>
           </div>
     
       </div>	
       </div>
-      
+      </div>
 {% endblock %}
 
 {% block class8 %} class = 'active' {% endblock %}

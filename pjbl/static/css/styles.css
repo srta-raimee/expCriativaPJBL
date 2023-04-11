@@ -25,7 +25,7 @@ GENERAL CLASSES
 .bg-bottom{ background:none bottom !important;}
 .panel{}
 .title{}
-.content{}
+.content{text-align: justify}
 .button a{ text-decoration:none; background:url(../images/btn-bg.png) no-repeat; width:90px; height:30px; text-align:center; line-height:30px; display:block;}
 .button a:hover{background:url(../images/btn-bghover.png) no-repeat; color: pink;}
 .page-wrap{ width:960px; margin:0 auto; overflow:hidden;}
@@ -60,10 +60,10 @@ SOCIAL MEDIA CLASSES
 /*-------------------------------------------------
 BANNER CLASSES
 -------------------------------------------------*/
-.banner-wrap{width:90%; overflow:hidden; margin:0 auto;}
+.banner-wrap{width:700px; overflow:hidden; margin:0 auto;}
 .banner{ height:500px;display: flex; align-self: center; align-content: center; }
 .banner .banner-img{ align-self: center; align-content: center; display: flex;}
-.shadow{ width:950px; height:38px; background:url(../images/shadow.png) no-repeat center; margin-bottom:45px;}
+/* .shadow{ width:950px; height:38px; background:url(../images/shadow.png) no-repeat center; margin-bottom:45px;} */
 
 /*-------------------------------------------------
 BOX CLASSES
@@ -175,3 +175,6 @@ FOOTER CLASSES
 .copyright-wrap .content p a{ color:#feaf32; text-decoration:none;}
 .copyright-wrap .content p a:hover{ color:#ffffff;}
 .copyright-wrap .content p a.active{ color:#ffffff;}
+
+
+.conteudo{ margin: 10px; position: relative; left: 50%; transform: translateX(-50%); width: 600px; text-align: justify; justify-content: center; }

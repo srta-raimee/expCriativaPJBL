@@ -2,14 +2,6 @@ import flask as fk
 
 render = fk.Blueprint("render", __name__, template_folder="./views/", static_folder='./static/', root_path="./")
 
-# aqui estão todas as funções de renderização de páginas (somente e apenas), para fins de organização
-
-sensores = []
-tempos = []
-qtd = []
-tempoTrav = []
-
-print(sensores)
 
 @render.route("/")
 def default_index():
@@ -29,7 +21,12 @@ def pag_cad_user():
 
 @render.route("/pag_login")
 def pag_log():
-    return fk.render_template("login.html")
+    return fk.render_template("login.html") 
+
+# @render.route("/login")
+# def login():
+#     global nomes, emails, senhas, cpfs
+#     if nomes[i] == 
 
 @render.route("/sensores")
 def sens():
@@ -42,7 +39,12 @@ def about():
 @render.route("/list", methods = ["get"])
 def listar():
     global sensores, tempos, qtd, tempoTrav
-    return fk.render_template("list.html", sensores=sensores, tempos=tempos, qtd=qtd, tempoTrav=tempoTrav )
+    return fk.render_template("list.html", sensores=sensores, tempos=tempos, qtd=qtd, tempoTrav=tempoTrav ) # declarando todas as listas que podem ser usadas posteriormente
+
+@render.route("/list_users", methods = ["get"])
+def listar_users():
+     global nomes, emails, senhas, cpfs
+     return fk.render_template("list_users.html", nomes=nomes, emails=emails, senhas=senhas, cpfs=cpfs) 
 
 @render.route("/project")
 def projetar():
@@ -51,8 +53,19 @@ def projetar():
 
 # rotas post
 
-@render.route("/registrar", methods=["get", "post"]) # vai ser chamado pelo botão no form html usando a chamaada action
-def reg():
+sensores = []
+tempos = []
+qtd = []
+tempoTrav = []
+
+nomes = []
+emails = []
+senhas = []
+cpfs = []
+
+
+@render.route("/registrar_sensor", methods=["get", "post"]) # vai ser chamado pelo botão no form html usando a chamaada action
+def reg_sens():
     nomeSensor = fk.request.form.get('nomeSensor',None)
     tempoLigado = fk.request.form.get('tempoLigado', None)
     qtdFaixa = fk.request.form.get('qtdFaixa', None)
@@ -67,3 +80,18 @@ def reg():
     
     return fk.redirect(fk.url_for('render.listar')) # vai redirecionar para a função de renderização da página "listar"
 
+@render.route("/registrar_user", methods=["get", "post"]) # vai ser chamado pelo botão no form html usando a chamaada action
+def reg_user():
+    nome = fk.request.form.get('nome',None)
+    email = fk.request.form.get('email', None)
+    senha = fk.request.form.get('senha', None)
+    cpf = fk.request.form.get('cpf', None)
+
+    global nomes, emails, senhas, cpfs
+    nomes.append(nome)
+    emails.append(email)
+    senhas.append(senha)
+    cpfs.append(cpf)
+    print(nomes)
+    
+    return fk.redirect(fk.url_for('render.pag_log')) 
